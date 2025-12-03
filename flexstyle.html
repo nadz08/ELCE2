@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> flex introduction </title>
+    <style>
+        .container{
+            display: flex;
+            height: 800px;
+            width: 100%;
+            background-color: lightgrey;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .item{
+            background-color: teal;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .item1{
+            height: 100px;
+            order: 5;
+            flex: 2,1,auto;
+            
+        }
+        .item2{
+            height: 100px;
+        }
+        .item3{
+            height: 100px;
+        }
+        .item4{
+            height: 100px;
+        }
+        .item5{
+            height: 100px;
+        }
+        .item6{
+            height: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1 item">box 1</div>
+        <div class="item2 item">box 2</div>
+        <div class="item3 item">box 3</div>
+        <div class="item4 item">box 4</div>
+        <div class="item5 item">box 5</div>
+        <div class="item6 item">box 6</div>
+    </div>
+</body>
+</html>
