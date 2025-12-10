@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested BMW Product Card</title>
+    <style>
+        /* General page layout: Centers the outermost box */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Center vertically for demonstration */
+            min-height: 100vh; /* Ensure full viewport height */
+            margin: 0;
+        }
+
+        /* --- New Outer Boxes --- */
+
+        /* 1. Outermost Box (Subtle border/background for context) */
+        .outer-box {
+            padding: 20px;
+            background-color: #e9e9e9; /* Slightly darker than body */
+            border: 1px dashed #cccccc; /* Dashed border for visual separation */
+        }
+
+        /* 2. Inner Box (A smaller container within the outer box) */
+        .inner-box {
+            padding: 15px;
+            background-color: #ffffff; /* White background */
+            border: 1px solid #c0c0c0; /* Solid gray border */
+        }
+
+        /* --- Product Card Styling (Retained from previous concise version) --- */
+
+        /* 3. Main Product Card (This is the styled BMW card) */
+        .card {
+            width: 300px;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+            padding-bottom: 10px;
+        }
+        .img-box {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .content {
+            padding: 10px 15px;
+        }
+        .title {
+            font: bold 18px Arial, sans-serif;
+            color: #333;
+            margin: 0 0 5px 0;
+        }
+        .desc {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        .price-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .price {
+            font: bold 18px Arial, sans-serif;
+            color: #000;
+            margin-right: 10px;
+        }
+        .old-price {
+            font-size: 14px;
+            color: #777;
+            text-decoration: line-through;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            background: #007bff;
+            color: white;
+            text-align: center;
+            font: bold 16px Arial, sans-serif;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color .3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .separator {
+            border: none;
+            height: 1px;
+            background-color: #e0e0e0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="outer-box">
+        <div class="inner-box">
+            <div class="card">
+                <div class="img-box">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQERUQEBIVFRUXFhUYGBUWFhUVGBY” 
+                         alt="Image of a BMW">
+                </div>
+
+                <hr class="separator">
+
+                <div class="content">
+                    <p class="title">BMW 3 Series Sedan</p>
+
+                    <p class="desc">
+                        The ultimate driving machine. Powerful engine, sophisticated design, and cutting-edge technology.
+                    </p>
+
+                    <div class="price-group">
+                        <span class="price">€49,990</span>
+                        <span class="old-price">€52,000</span>
+                    </div>
+
+                    <a href="#" class="btn">
+                        Book a Test Drive
+                   <a>
+             </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
